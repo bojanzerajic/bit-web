@@ -131,6 +131,7 @@
     border-radius: 12px;
     background-color: rgb(247, 117, 10);
     color: white;
+    margin-left: 30px;
   }
 
   input {
@@ -139,5 +140,33 @@
     border: 1px solid gray;
     border-radius: 12px;
     padding-left: 30px;
+  }
+}
+/*OUR WORKS */
+
+.our_works {
+  width: 100%;
+
+}
+.ourWorksHeadline {
+  width: 50%;
+  margin: 100px auto;
+  text-align: center;
+
+  h5 {
+    font-size: 35px;
+  }
+  span {
+    color:rgb(247, 117, 10);
+  }
+}
+.portfolio {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  img {
+    margin: 1%;
+    width: 27%;
   }
 }
