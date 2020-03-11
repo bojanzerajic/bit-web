@@ -26,11 +26,29 @@ function gitHubSearch() {
             userName.append(array[i].login);
             div.appendChild(avatar);
             div.appendChild(userName);
+            div.addEventListener('click', getRepos);
             divParent.appendChild(div);
             body.appendChild(divParent);
         }
     })
 
+
+
+}
+
+function getRepos(event) {
+    var userName = event.currentTarget.querySelector('p').textContent;
+    var fullUrl = "https://api.github.com/users/" + userName + "/repos";
+
+    var request = $.ajax({
+        url: fullUrl,
+        method: "GET",
+    });
+
+    request.done(function (response) {
+
+
+    })
 
 
 }
