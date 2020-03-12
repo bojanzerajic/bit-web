@@ -46,6 +46,12 @@ function getRepos(event) {
     });
 
     request.done(function (response) {
+        var repoInfo = document.querySelector('#repoInfo');
+        for (var i = 0; i < response.length; i++) {
+            var repoPar = document.createElement('p');
+            repoPar.textContent = response[i].name;
+            repoInfo.appendChild(repoPar);
+        }
 
 console.log(response);
 
