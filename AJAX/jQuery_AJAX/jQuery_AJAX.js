@@ -47,6 +47,7 @@ function getRepos(event) {
 
     request.done(function (response) {
 
+console.log(response);
 
     })
 
