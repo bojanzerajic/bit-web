@@ -28,5 +28,30 @@ input {
     width: 400px;
     height: 30px;
 }
+button {
+    height: 30px;
+    width: 50px;
+}
 
-.divSingleVideo {}
+iframe {
+    display: block;
+    margin: 5px auto;
+    width: 70%;
+    height: 500px;
+}
+
+.searchWrapper {
+    display: flex;
+    flex-direction: row;
+}
+
+.divSingleVideo {
+    width: 70%;
+    margin: 0 auto;
+}
+
+#videoGallery {
+}
+.container {
+    background-color: #fe011c;
+}

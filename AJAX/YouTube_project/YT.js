@@ -24,7 +24,7 @@ function searchYouTube() {
             divSingleVideo.className = 'divSingleVideo';
             divSingleVideo.setAttribute('data-id', array[i].id.videoId);
 
-            image.setAttribute('src', array[i].snippet.thumbnails.high.url);
+            image.setAttribute('src', array[i].snippet.thumbnails.medium.url);
             title.textContent = array[i].snippet.title;
             desc.textContent = array[i].snippet.description;
             divSingleVideo.appendChild(image);
