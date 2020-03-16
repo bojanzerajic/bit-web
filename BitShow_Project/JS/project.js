@@ -1,16 +1,13 @@
 
 
-
-const searchValue = document.querySelector('input').value;
-
 let request = new XMLHttpRequest();
 request.open("GET", "http://api.tvmaze.com/shows");
 request.send();
 
 request.onload = function () {
     let res = JSON.parse(request.responseText);
-    console.log(res);
-    
+
+
     for (let i = 0; i < 50; i++) {
         let image = document.createElement('img');
         image.setAttribute('src', res[i].image.medium);
@@ -23,8 +20,33 @@ request.onload = function () {
         singleMovieDiv.className = 'singleMovieDiv';
         let mainDiv = document.querySelector('#container');
         mainDiv.appendChild(singleMovieDiv);
-        
+
     };
 }
+let input = document.querySelector('input');
+input.addEventListener('change', function () {
+    let inputSearch = document.querySelector('input').value;
+    let requestSingleSearch = new XMLHttpRequest();
+    requestSingleSearch.open("GET", "http://api.tvmaze.com/search/shows?q=" + inputSearch);
+    requestSingleSearch.send();
+    requestSingleSearch.onload = function () {
+        let result = JSON.parse(requestSingleSearch.responseText);
+        console.log(result);
+
+        let list = document.querySelector('ul');
+        for (var j = 0; j < result.length; j++) {
+            let singleShow = document.createElement('a');
+            singleShow.textContent = result[j].show.name;
+            singleShow.setAttribute('href', 'movieInfo.html?id=' + result[j].show.id);
+            let listItem = document.createElement('li');
+            listItem.appendChild(singleShow);
+            list.appendChild(listItem);
+
+        }
+    }
+
+});
+
+
 
 
