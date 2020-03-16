@@ -26,13 +26,12 @@ request.onload = function () {
 let input = document.querySelector('input');
 input.addEventListener('change', function () {
     let inputSearch = document.querySelector('input').value;
+    $('ul').html('');
     let requestSingleSearch = new XMLHttpRequest();
     requestSingleSearch.open("GET", "http://api.tvmaze.com/search/shows?q=" + inputSearch);
     requestSingleSearch.send();
     requestSingleSearch.onload = function () {
         let result = JSON.parse(requestSingleSearch.responseText);
-        console.log(result);
-
         let list = document.querySelector('ul');
         for (var j = 0; j < result.length; j++) {
             let singleShow = document.createElement('a');
@@ -44,7 +43,6 @@ input.addEventListener('change', function () {
 
         }
     }
-
 });
 
 

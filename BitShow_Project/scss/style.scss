@@ -59,3 +59,13 @@ h1 {
 .dropdown {
   position: relative;
 }
+#footer {
+  color: white;
+  background-color: black;
+  width: 100%;
+  height: 100px;
+  text-align: center;
+  p {
+      padding-top: 38px;
+  }
+}
