@@ -29,6 +29,9 @@ h1 {
     color: blue;
     font-size: 25px; }
 
+.activeUl {
+  display: block; }
+
 ul {
   list-style-type: none;
   position: absolute;
@@ -38,7 +41,8 @@ ul {
   background-color: white;
   border: 1px solid gray;
   border-radius: 5px;
-  padding-inline-start: 0px; }
+  padding-inline-start: 0px;
+  display: none; }
   ul li {
     border-bottom: 1px solid gray;
     width: 190px;

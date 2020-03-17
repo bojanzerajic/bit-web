@@ -24,9 +24,11 @@ request.onload = function () {
     };
 }
 let input = document.querySelector('input');
-input.addEventListener('change', function () {
+input.innerHTML = '';
+input.addEventListener('keyup', function () {
     let inputSearch = document.querySelector('input').value;
     $('ul').html('');
+    $('ul').addClass('activeUl');
     let requestSingleSearch = new XMLHttpRequest();
     requestSingleSearch.open("GET", "http://api.tvmaze.com/search/shows?q=" + inputSearch);
     requestSingleSearch.send();

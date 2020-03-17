@@ -33,6 +33,13 @@ h1 {
     font-size: 25px;
   }
 }
+ .activeUl {
+  display: block;
+}
+
+
+
+
    ul {
     list-style-type: none;
     position: absolute;
@@ -43,6 +50,7 @@ h1 {
     border: 1px solid gray;
     border-radius: 5px;
     padding-inline-start: 0px;
+    display: none;
   li {
     border-bottom: 1px solid gray;
     width: 190px;
@@ -53,9 +61,9 @@ h1 {
       text-decoration: none;
       color: gray;
       font-size: 12px;
-    }
-  }
-}
+     }
+   }
+ }
 .dropdown {
   position: relative;
 }
