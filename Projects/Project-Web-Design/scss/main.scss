@@ -222,5 +222,35 @@
 
 .our-team {
   width: 100%;
+}
+.photo-grid {
+  width: 80%;
+  margin: 0px auto;
   display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: baseline;
+  justify-content: space-between;
+  
+}
+.team-members {
+  width: 22%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 200px;
+  h5 {
+    margin: 20px auto;
+  }
+  p {
+    text-align: center;
+  }
+}
+.icons-social {
+  img {
+    width: 100px;
+    height: auto;
+    margin-bottom: 20px;
+  }
+  
 }
