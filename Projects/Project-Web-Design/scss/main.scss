@@ -1,3 +1,4 @@
+/* GENERAL SETTINGS */
 * {
   box-sizing: border-box;
 }
@@ -83,6 +84,7 @@
   margin: 100px auto;
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   justify-content: space-evenly;
   text-align: center;
 }
@@ -99,6 +101,7 @@
 .design-flex {
   display: flex;
   flex-direction: column;
+  width: 24%;
   justify-content: space-between;
   align-items: center;
   h5 {
@@ -218,7 +221,7 @@
       text-align: center;
     }
   }
-/* our team */ 
+/* OUR TEAM */ 
 
 .our-team {
   width: 100%;
@@ -251,6 +254,156 @@
     width: 100px;
     height: auto;
     margin-bottom: 20px;
+  } 
+}
+/* SAY HELLO */
+
+.say-hello {
+  width: 100%;
+  height: 770px;
+  background-image: url('../img/contact-background.jpg');
+}
+.sayHello-titleDiv {
+  width: 50%;
+  margin: 0px auto 100px;
+  padding-top: 100px;
+  text-align: center;
+
+  h5 {
+    font-size: 35px;
+    color: white;
   }
-  
+  span {
+    color:rgb(247, 117, 10);
+  }
+  P {
+    color: white;
+  }
+}
+.sayHello-form {
+  width: 60%;
+  margin: auto;
+
+   input {
+     width: 48%;
+     height: 50px;
+     border-radius: 8px;
+     padding-left: 16px;
+     margin-bottom: 25px;
+   }
+   textarea {
+     width: 100%;
+     border-radius: 8px;
+     padding-left: 16px;
+     padding-top: 8px;
+     margin-bottom: 20px;
+   }
+  button {
+    color: white;
+    border: 1px solid gray;
+    border-radius: 12px;
+    width: 200px;
+    height: 50px;
+    padding: 5px;
+    background-color: rgb(247, 117, 10);
+    button:hover {
+      color: white;
+      cursor: pointer;
+    }
+  }
+  img {
+    display: block;
+    height: fit-content;
+  }
+}
+.wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+/* FOOTER */
+
+footer {
+  width: 100%;
+  height: 100px;
+  background-color: #434b54;
+  color: white;
+  p {
+    width: 80%;
+    height: 100px;
+    margin: auto;
+    padding-top: 40px;
+    text-align: left;
+  }
+}
+/* RESPONSIVE */ 
+
+@media screen and (max-width: 1220px) {
+  .team-members {
+    width: 48%;
+    margin-bottom: 50px;
+    }
+
+  .headline {
+    h1 {
+      font-size: 60px;
+    }
+    p {
+      font-size: 20px;
+    }
+    button {
+      width: 150px;
+      height: 40px;
+    }
+  }
+}
+@media screen and (max-width: 1040px) {
+
+.design-flex {
+  width: 35%;
+   }
+}
+
+@media screen and (max-width: 970px) {
+  .headline {
+    h1 {
+      font-size: 50px;
+    }
+    p {
+      font-size: 16px;
+    }
+    button {
+     width: 120px;
+ }
+}
+.portfolio {
+  img {
+  width: 35%;
+    }
+  }
+}
+@media screen and (max-width: 830px) {
+  .headline {
+    h1 {
+      font-size: 40px;
+    }
+    p {
+      font-size: 12px;
+    }
+    button {
+     width: 100px;
+     font-size: 14px;
+   }
+  }
+
+  .sayHello-form {
+    button {
+      width: 180px;
+      height: 40px;
+    }
+    img {
+      width: 240px;
+    }
+  }
+
 }
