@@ -365,6 +365,14 @@ footer {
 }
 
 @media screen and (max-width: 970px) {
+  .nav-bar {
+    p {
+      font-size: 16px;
+    }
+    h4 {
+      font-size: 22px;
+    }
+  }          
   .headline {
     h1 {
       font-size: 50px;
@@ -383,6 +391,14 @@ footer {
   }
 }
 @media screen and (max-width: 830px) {
+  .nav-bar {
+    p {
+      font-size: 14px;
+    }
+    h4 {
+      font-size: 20px;
+    }
+  }          
   .headline {
     h1 {
       font-size: 40px;
@@ -406,4 +422,65 @@ footer {
     }
   }
 
+}
+
+@media screen and (max-width: 740px) {
+  .headline {
+    h1 {
+      font-size: 30px;
+    }
+    p {
+      font-size: 10px;
+    }
+    button {
+     width: 80px;
+     font-size: 12px;
+   }
+  }
+
+  .sayHello-form {
+    button {
+      width: 160px;
+      height: 35px;
+    }
+    img {
+      width: 180px;
+    }
+  }
+}
+@media screen and (max-width: 640px) {
+  .portfolio {
+    img {
+    width: 50%;
+      }
+    }
+  .team-members {
+      width: 100%;
+      margin-bottom: 50px;
+      }
+  .design-flex {
+        width: 100%;
+         }
+  .headline {
+      h1 {
+        font-size: 25px;
+          }
+      p {
+        font-size: 10px;
+        margin-bottom: 0px;
+          }
+      button {
+        width: 60px;
+        height: auto;
+        font-size: 8px;
+         }
+        }
+   .nav-bar {
+     p {
+       font-size: 12px;
+     }
+     h4 {
+       font-size: 18px;
+     }
+   }           
 }

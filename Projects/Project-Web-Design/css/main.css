@@ -298,6 +298,11 @@ footer {
   .design-flex {
     width: 35%; } }
 @media screen and (max-width: 970px) {
+  .nav-bar p {
+    font-size: 16px; }
+  .nav-bar h4 {
+    font-size: 22px; }
+
   .headline h1 {
     font-size: 50px; }
   .headline p {
@@ -308,6 +313,11 @@ footer {
   .portfolio img {
     width: 35%; } }
 @media screen and (max-width: 830px) {
+  .nav-bar p {
+    font-size: 14px; }
+  .nav-bar h4 {
+    font-size: 20px; }
+
   .headline h1 {
     font-size: 40px; }
   .headline p {
@@ -321,5 +331,44 @@ footer {
     height: 40px; }
   .sayHello-form img {
     width: 240px; } }
+@media screen and (max-width: 740px) {
+  .headline h1 {
+    font-size: 30px; }
+  .headline p {
+    font-size: 10px; }
+  .headline button {
+    width: 80px;
+    font-size: 12px; }
+
+  .sayHello-form button {
+    width: 160px;
+    height: 35px; }
+  .sayHello-form img {
+    width: 180px; } }
+@media screen and (max-width: 640px) {
+  .portfolio img {
+    width: 50%; }
+
+  .team-members {
+    width: 100%;
+    margin-bottom: 50px; }
+
+  .design-flex {
+    width: 100%; }
+
+  .headline h1 {
+    font-size: 25px; }
+  .headline p {
+    font-size: 10px;
+    margin-bottom: 0px; }
+  .headline button {
+    width: 60px;
+    height: auto;
+    font-size: 8px; }
+
+  .nav-bar p {
+    font-size: 12px; }
+  .nav-bar h4 {
+    font-size: 18px; } }
 
 /*# sourceMappingURL=main.css.map */
