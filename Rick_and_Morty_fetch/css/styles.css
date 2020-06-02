@@ -1,0 +1,58 @@
+* {
+  box-sizing: border-box; }
+
+body {
+  margin: 0;
+  background-size: contain;
+  background-image: url(../img/rick-and-morty-wallpaper-first.png); }
+
+.container {
+  width: 60%;
+  margin: 50px auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap; }
+
+.header {
+  background-color: darkslategray; }
+  .header a {
+    color: white; }
+
+.likeButton {
+  width: 100%; }
+
+.singleCharacterDiv {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 23%;
+  background-color: white;
+  border-radius: 6px;
+  margin-bottom: 25px; }
+  .singleCharacterDiv a {
+    color: darkslategray;
+    font-weight: 500; }
+  .singleCharacterDiv img {
+    width: 100%;
+    border-radius: 6px 6px 0px 0px; }
+
+.titleDiv {
+  height: auto;
+  width: 80%;
+  margin: 5px 0px; }
+
+ul {
+  list-style-type: none;
+  padding-inline-start: 0px; }
+  ul li {
+    border-bottom: 1px solid gray;
+    display: flex;
+    justify-content: space-between; }
+
+.navigation {
+  width: 300px;
+  margin: auto;
+  margin-top: 30px; }
+
+/*# sourceMappingURL=styles.css.map */

@@ -1,0 +1,40 @@
+* {
+  box-sizing: border-box; }
+
+body {
+  background-image: url(../img/rick-morty-yellow.png);
+  background-position: 0px -71px;
+  background-size: cover; }
+
+#container {
+  position: relative;
+  width: 100%;
+  height: 728px;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+#data-wrapper {
+  position: absolute; }
+  #data-wrapper img {
+    border-radius: 6px 6px 0px 0px; }
+  #data-wrapper h1 {
+    text-align: center;
+    max-width: fit-content;
+    padding: 5px; }
+
+#table-wrapper {
+  background-color: #bd2130;
+  border-radius: 0px 0px 6px 6px; }
+
+table {
+  width: 100%; }
+  table th {
+    text-align: left;
+    padding-left: 5px; }
+  table td {
+    text-align: right;
+    color: goldenrod;
+    padding-right: 5px; }
+
+/*# sourceMappingURL=stylesTwo.css.map */
